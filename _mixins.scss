@@ -1,0 +1,87 @@
+@import "_breakpoints";
+
+@mixin flex-center () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-right () {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@mixin flex-left () {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin flex-row-baseline {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+@mixin flex-column-baseline {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin container {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+@mixin container-sm {
+    width: 90%;
+    margin-left: 10%;
+    box-sizing: border-box;
+}
+
+
+
+@mixin black-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem 0.2rem;
+    width: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+@mixin border-button {
+    padding: 0.4rem 2rem 0.3rem;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+@mixin side-text {  
+    position: absolute;
+    rotate: -90deg;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: small;
+}
+
